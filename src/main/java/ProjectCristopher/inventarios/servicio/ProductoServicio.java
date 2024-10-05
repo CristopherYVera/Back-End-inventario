@@ -21,8 +21,7 @@ public class ProductoServicio implements IProductoServicio{
 
     @Override
     public Producto buscarProductoPorId(Integer idProducto) {
-        Producto producto = this.productoRepositorio.findById(idProducto).orElse(null);
-        return producto;
+       return this.productoRepositorio.findById(idProducto).orElse(null);
     }
 
     @Override
